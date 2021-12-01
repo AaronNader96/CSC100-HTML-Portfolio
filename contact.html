@@ -1,0 +1,79 @@
+<html>
+ <!-- 
+Aaron Nader
+contact.html
+09/17/2020
+-->
+<!-- main tag shows the main content for the document-->
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<main> 
+<nav id="mainNav">
+	<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+		  <li><a href="about.html">About Me</a></li>
+		  <li><a href="gallery.html">Gallery</a></li>
+	</ul>
+</nav>
+<header id="pageHeader">
+	<article id="contact">
+		<h2 class="titlename">Contact us Today!</h2>
+		<h3>Email Me: <a href="mailto:anader001@my.wilmu.edu" class="contact-email-link">anader001@my.wilmu.edu</a></h3>
+		<h2 class="tel-link">Contact #<a href="tel:8881112222">(888) 111-2222</a></h2>
+		
+		<div id="form">
+			<form>
+				<fieldset>
+					<legend>Customer Information</legend>
+					<p>Some basic Info</p>
+					<label for="fName">First Name:</label>
+					<input type="text" id="fName" name="fName" required>
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" required>
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required>
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required>
+				</fieldset>
+				<fieldset>
+					<legend>Additional Information</legend>
+					<p>I would like more info about:</p>
+					<label for="prog"><input type="checkbox" name="interest" id="prog" value="Programming">Computer Programming</label>
+					<label for="webd"><input type="checkbox" name="interest" id="webd" value="web">Web Development</label>
+				</fieldset>
+				<fieldset>
+					<legend>Referral</legend>
+					<p>Last Step :)</p>
+					<label for="reference">How did you find about me?</label>
+					<select name="reference" id="reference">
+						<option value="school">Wilmington University</option>
+						<option value="ad">Advertisement</option>
+						<option value="friend">Friend</option>
+						<option value="social">Social Media / Facebook</option>
+					</select>
+					
+					<label for="extra">Anything Else?</label>
+					<textarea id="extra" name="extra" rows="5" cols="25"></textarea>
+				</fieldset>
+				
+				<input type="submit" id="submit" value="Submit" class="btn">
+			</form>
+		</div>
+		<h3> Address below <h3>
+		<figure>
+			<figcaption>Wilmington University Google Maps</figcaption>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.56292152865!2d-75.58861858436708!3d39.682045507915184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c703b048560cd5%3A0xdee9dd3f4f637375!2sWilmington%20University!5e0!3m2!1sen!2sus!4v1600397498386!5m2!1sen!2sus" width="400px" height="400px" frameborder="0" style="border: 2px solid #000;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</figure>
+	</article> 
+</header>	
+<footer id="pageFooter">
+<h3> <a href="mailto:anader001@my.wilmu.edu" class="contact-email-link">anader001@my.wilmu.edu</a></h3>
+</footer>
+</main>
+</html>

@@ -1,0 +1,452 @@
+/*
+Aaron Nader
+9/25/2020
+style.css
+*/
+
+/* CSS reset below. This will reset all browser settings that make page look differently on other browsers */
+body, header, nav, footer, ul, hover, figure, figcaption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Main Styling */
+main {
+	background-color: #999999;
+	padding: 2%;
+	font-size: 1.45em;
+	font-family: 'Oswald', sans-serif;
+	border: 1px solid #000;
+	border-radius: 2px 3px 4px 5px;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	border: 1px solid #000;
+	border-radius: 5px 10px 8px;
+}
+
+.aligncenter {
+    display: table-cell;
+    height: 350px;
+    text-align: center;
+    width: 350px;
+    vertical-align: middle;
+}
+
+p:hover {
+	font-weight: bold;
+	color: gray;
+	text-shadow: 2px 2px 40px black;
+}
+
+.titlename {
+	color: gray;
+	text-shadow: 2px 2px 40px black;
+}
+	
+.tel-link {
+
+	padding: 2%;
+	margin: 0 auto;
+	width: 30%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+#contact .contact-email-link {
+	color: #666600;
+	text-decoration: none;
+}
+
+/*Grid Styling */
+body { 
+	display: grid;
+	grid-template-areas: 
+		"header header header"
+		"nav article article"
+		"nav footer footer";
+	grid-template-columns: auto auto auto;
+}  
+
+header, footer, article, nav, div {
+	padding: 1.2em;
+}
+
+#pageHeader {
+	grid-area: header;
+}
+#pageFooter {
+	grid-area: footer;
+	background: gray;
+}
+#mainArticle { 
+	grid-area: article;      
+	background: gray;
+}
+#mainNav { 
+	grid-area: nav;
+}
+/* Header Styling */
+
+header {
+  padding: 60px;
+  text-align: center;
+  background: #5C0B0B;
+  color: white;
+  font-size: 30px;
+}
+
+.header {
+	grid-area: header;
+}
+
+header img {
+	margin: 0 auto;
+}
+
+/* Body Styling */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Nav Styling */
+ul {
+	list-style-type: none;
+}
+
+nav {
+	padding: 1%;
+	margin-bottom: 1%;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li {
+	font-size: 1.5em;
+	font-family: 'Oswald', sans-serif;
+	border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+	border-top: none;
+}
+
+nav lia a {
+	display: block;
+	padding: 0.5em 1em;
+	color: #FF9900;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Footer Styling */
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #666666;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+.aboutme {
+	color: #4fdb4f;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#about {
+	text-align: center;
+	padding: 25px;
+	grid-area: article;      
+	background: gray;
+}
+
+#contact {
+	text-align: center;
+	padding: 20px;
+	grid-area: article;      
+	background: gray;
+}
+
+#contact a {
+	color: #666600;
+	text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* Style rule for mobile and tablet*/
+
+.round {
+	border-radius: 8px;
+}
+
+.mobile {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
+/* Form Styling */
+#form {
+	margin-top: 2%;
+	background-color: #5C0B0B;
+	padding: 2%;
+}
+
+#form h2 {
+	text-align: center;
+}
+
+/*Mobile*/
+@media screen and (min-width: 320px) {
+	
+	/* Viewport: Style rules for nav area */
+	nav li {
+		border-top:none;
+		display: inline-block;
+		border-right: 1px solid;
+	}
+	
+	nav li:last-child {
+		border-right:none;
+	}
+	
+	nav li a {
+		padding: 0.1em 0.75em;
+	}
+	
+	/* Viewport: Style rules for main area */
+	main {	
+		background-color: #666699;
+		font-size: 0.875em;
+	}
+	
+	h1 {
+		font-size: 1.25em;
+		color: #0534f2;
+		font-weight: bold;
+		text-shadow: 2px 2px 40px black;
+	}
+	
+	body {
+		grid-template-columns: 414px 414px 414px;
+	}
+	
+	/* Mobile Style table */
+	
+	table, td, th {  
+	  border: 1px solid #5C0B0B;
+	  text-align: center;
+	}
+
+	table {
+	  border-collapse: collapse;
+	  width: auto;
+	  margin: 0 auto;
+	}
+
+	th, td {
+	  padding: 8px;
+	}
+	
+	/*Mobile Style form */
+	
+	fieldset, input, select, textarea {
+		margin-bottom: 2%;
+	}
+	
+	fieldset legend {
+		font-weight: bold;
+		font-size: 1.25em;
+	}
+	
+	label {
+		display: block;
+		padding-top: 3%;
+	}
+	
+	form #submit {
+		margin: 0 auto;
+		border: none;
+		display: block;
+		padding: 2%;
+		font-size: 1em;
+		border-radius: 10px;
+	}
+		
+	/* HIDE FOOTER BLOCKING OTHER DETAISL ON SMALLER DEVICES */
+	footer { 
+		position: static;
+		text-decoration: none;
+		display: none;  
+    }
+}
+
+/*Tablets, Small desktop monitors, laptops*/
+@media screen and (min-width: 630px) {
+	/* Viewport: Style rules for nav area */
+	nav li {
+		border-top:none;
+		display: inline-block;
+		border-right: 1px solid;
+	}
+	
+	nav li:last-child {
+		border-right:none;
+	}
+	
+	nav li a {
+		padding: 0.1em 0.75em;
+	}
+	
+	/* Viewport: Style rules for main area */
+	main {	
+		background-color: #99cc00;
+		font-size: 1.25em;
+	}
+	
+	body {
+		grid-template-columns: 768px 768px 768px;
+	}
+	
+	h1 {
+		font-size: 1.45em;
+		color: #c7f205;
+		font-weight: bold;
+		text-shadow: 2px 2px 40px black;
+	}
+	
+	/* Tablet Style table */
+	
+	table, td, th {  
+	  border: 1px solid #5C0B0B;
+	  text-align: center;
+	}
+
+	table {
+	  border-collapse: collapse;
+	  width: auto;
+	  margin: 0 auto;
+	}
+
+	th, td {
+	  padding: 12px;
+	}
+	
+	/*Tablet Style form */
+	form {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+}
+
+/*Desktop or Large Tablets*/
+@media screen and (min-width: 769px) {
+	
+	/* Viewport: Style rules for nav area */
+	nav {
+		float: right;
+		width: 70%;
+		margin: 4em 1em 0 0;
+	}
+	
+	nav ul {
+		text-align: right;
+	}
+	
+	nav li:hover {
+		font-weight: bold;
+		background-color: #999999;
+		color: #f24405;
+		border: none;
+	}
+	
+	nav li a {
+		padding: 0.5em 1em;
+	}
+	
+	/* Viewport: Style rules for paragraph area */
+	
+	p:first-child {
+		font-weight: bold;
+	}
+	
+	p:last-child {
+		font-weight: bold;
+	}
+	
+	/* Viewport: Style rules for main area */
+	
+	
+	main {	
+		background-color: #999999;
+	}
+	
+	body {
+		grid-template-columns: 1900px 1900px 1900px;
+	}
+	
+	h1 {
+		font-size: 1.85em;
+		color: #f24405;
+		font-weight: bold;
+		text-shadow: 2px 2px 40px black;
+	}
+
+	/*Table Styling*/
+	table, td, th {  
+	  border: 2px solid #5C0B0B;
+	  text-align: center;
+	}
+
+	table {
+	  border-collapse: collapse;
+	  width: auto;
+	  margin: 0 auto;
+	}
+
+	th, td {
+	  padding: 15px;
+	}
+	
+	/*Desktop Style form */
+	form {
+		width: auto;
+	}
+	
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	
+	.btn {
+		grid-column: 1 / span 3;
+	}
+}
